@@ -1,0 +1,190 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e9ecef;
+    margin-bottom: 25px;
+    padding: 25px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .register-btn {
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e9ecef;
+  
+    .hero-container {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+  
+      .content {
+        flex: 1;
+      }
+  
+      .hero-image {
+        flex: 1;
+        text-align: right;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  
+  /* Grid Section */
+  .grid-section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-image: url('laptop.webp'); // Замініть background.jpg на шлях до вашого зображення
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  
+    .card {
+      background-color: rgba(0, 0, 0, 0.6); // Напівпрозорий фон для читабельності тексту
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .register-container {
+      grid-column: span 3;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Card */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Steps Section */
+  .steps-section {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+  
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  
+      .step {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        width: 150px;
+      }
+    }
+  
+    .register-btn {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  /* Table */
+  table {
+    margin: 0 auto; // Центрування таблиці
+    border-collapse: collapse;
+    width: auto; // Або встановіть потрібну ширину
+    max-width: 600px;
+  
+    td {
+      border: 0px solid #e9ecef;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  /* List */
+  .list {
+    display: flex;
+    flex-direction: column; // Структура у стовпчик
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #000;
+  
+    .list-logo {
+      text-align: left; // Логотип вирівняний ліворуч
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .list-links {
+      display: flex;
+      justify-content: center; // Таблиця по центру сторінки
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-section {
+      display: block;
+      margin-block: 10px;
+  
+      .card {
+        margin-top: 10px;
+      }
+    }
+  }
+  
